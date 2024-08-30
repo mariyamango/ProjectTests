@@ -3,8 +3,6 @@ package org.example;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
-
 class MainTest {
 
     @Test
@@ -37,5 +35,16 @@ class MainTest {
         int actual = Main.productOfTwoInt(4,5);
         //Then
         Assertions.assertEquals(expect, actual);
+    }
+
+    @Test
+    void stringToUpperCase_expectToUpperCase(){
+        //Given
+        String expect = "HELLO";
+        // When
+        String actual = Main.stringToUpperCase("Hello");
+        //Then
+        Assertions.assertEquals(expect, actual);
+
     }
 }
