@@ -47,4 +47,13 @@ class MainTest {
         Assertions.assertEquals(expect, actual);
 
     }
+
+    @Test
+    void isPositive_expectFalseOfMinus5(){
+        //Given
+        //When
+        boolean actual = Main.isPositive(-5);
+        //Then
+        Assertions.assertFalse(actual);
+    }
 }
