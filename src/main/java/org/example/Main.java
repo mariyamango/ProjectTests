@@ -17,4 +17,9 @@ public class Main {
     public static boolean checkNumberForEven(int num) {
         return num % 2 == 0;
     }
+
+    //task 3
+    public static int productOfTwoInt (int num1, int num2) {
+        return num1 * num2;
+    }
 }

@@ -28,4 +28,14 @@ class MainTest {
         //Then
         Assertions.assertTrue(actual);
     }
+
+    @Test
+    void productOfTwoInt_expect20of4and5(){
+        //Given
+        int expect = 20;
+        //When
+        int actual = Main.productOfTwoInt(4,5);
+        //Then
+        Assertions.assertEquals(expect, actual);
+    }
 }
