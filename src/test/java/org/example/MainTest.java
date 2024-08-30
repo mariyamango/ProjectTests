@@ -18,4 +18,14 @@ class MainTest {
         //Then
         Assertions.assertEquals(expect, actual);
     }
+
+    @Test
+    void checkNumberForEven_expectTrueFor2() {
+        //Given
+        int num = 2;
+        //When
+        boolean actual = Main.checkNumberForEven(num);
+        //Then
+        Assertions.assertTrue(actual);
+    }
 }
